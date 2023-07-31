@@ -74,7 +74,7 @@ describe('bbc register page', () => {
             cy.contains('span', 'Please include a letter.')
                 .should('be.visible')
         })
-        it.only('Password should have 8 characters with at least 1 letter, 1 number, or symbol.', () => {
+        it('Password should have 8 characters with at least 1 letter, 1 number, or symbol.', () => {
             cy.contains('span', '16 or over')
                 .click()
             cy.fillsDateBirth(dayMonth, dayMonth, year)
